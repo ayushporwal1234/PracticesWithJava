@@ -1,0 +1,15 @@
+package collectionFrameWork;
+import java.util.*;
+
+public class ArrayDEQUE {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ArrayDeque<Integer> dq = new ArrayDeque<>();
+		
+
+		
+	}
+
+}

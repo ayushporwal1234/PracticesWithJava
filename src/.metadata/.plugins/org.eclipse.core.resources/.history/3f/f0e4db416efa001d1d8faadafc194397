@@ -1,0 +1,15 @@
+package collectionFrameWork;
+import java.util.*;
+
+public class TreeMapDemo {
+
+	//it implement rbl tree
+	public static void main(String[] args) {
+
+		TreeMap<Integer,String> tm = new TreeMap<>(Map.of(1,"A",2,"B",3,"C"));
+			System.out.println(tm);
+			tm.put(4,"d");
+			System.out.println(tm);
+			tm.get(6);
+	}
+}

@@ -1,0 +1,24 @@
+package collectionFrameWork;
+import java.util.*;
+
+public class arrayList1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		ArrayList<Integer> arr = new ArrayList<>(10);
+		ArrayList<Integer> arr1 = new ArrayList<>(List.of(10,20,30,40,50,60));
+		
+		
+		arr.add(05);
+		System.out.println(arr);
+		arr.addAll(arr1);
+		//System.out.println(arr);
+		 arr.forEach(System.out::println);
+//		for(Integer e: arr)
+//		{
+//			System.out.println(e);
+//		}
+	}
+
+}

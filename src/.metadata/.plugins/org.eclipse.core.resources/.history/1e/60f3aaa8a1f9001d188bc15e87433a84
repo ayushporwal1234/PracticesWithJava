@@ -1,0 +1,18 @@
+package collectionFrameWork;
+import java.util.*;
+
+public class hashingDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashSet<Integer> hs = new HashSet<Integer>();
+		hs.add(10);
+		hs.add(56);
+		hs.add(10);
+		hs.add(9);
+		
+		hs.forEach((x)->(System.out.println(x));
+	}
+
+}
+ 

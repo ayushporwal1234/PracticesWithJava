@@ -1,0 +1,20 @@
+package collectionFrameWork;
+import java.util.*;
+
+public class hashingDemo {
+
+	//unique value store
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashSet<Integer> hs = new HashSet<Integer>();
+		hs.add(1);
+		hs.add(56);
+		hs.add(11);
+		hs.add(91);
+		
+		//hs.forEach((x)->System.out.println(x));
+		System.out.println(hs.size());
+	}
+
+}
+ 

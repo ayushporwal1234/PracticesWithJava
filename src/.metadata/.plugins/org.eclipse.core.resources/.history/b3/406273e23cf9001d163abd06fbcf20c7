@@ -1,0 +1,69 @@
+package exception;
+
+class MyData1
+{
+	int value;
+	public void set(int v) 
+	{
+		value=v;
+	}
+	public int get()
+	{
+		int x=0;
+		x=value;
+		return x;
+	} 
+}
+
+ class producer extends Thread
+{
+	MyData1 data;
+	
+	public producer(MyData1 d)
+	{
+		data=d;
+	}
+	public void run()
+	{
+		int count = 1;
+		while(true)
+		{
+			data.set(count);
+			System.out.println("Produce "+count);
+			count++;
+		}
+	}
+}
+
+ class consumer extends Thread
+ {
+	 MyData1 data;
+	
+	 public consumer(MyData1 d)
+	 {
+		 data=d;
+	 }
+	 public void run()
+		{
+			int value;
+			while(true)
+			{
+				value = data.get();
+				System.out.println("Consumer "+ value);
+			}
+ }
+
+public class InterThreadProcess 
+{
+
+	public static void main(String[] args) 
+	{
+		MyData1 data = new MyData1();
+	
+		producer p = new producer (data);
+		consumer c = new consumer(data);
+		
+		p.start();
+		c.start();
+
+	}

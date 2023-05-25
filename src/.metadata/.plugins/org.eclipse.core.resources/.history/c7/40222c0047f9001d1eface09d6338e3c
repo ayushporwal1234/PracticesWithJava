@@ -1,0 +1,19 @@
+package collectionFrameWork;
+import java.util.*;
+
+public class arrayList {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> arr = new ArrayList<>(10);
+		ArrayList<Integer> arr2 = new ArrayList<>(List.of(10,20,60,40,80,50));
+			
+			arr.add(19);
+			arr.add(11);
+			System.out.println(arr);
+			arr.addAll(0,arr2);
+			System.out.println(arr);
+			
+			
+	}
+
+}

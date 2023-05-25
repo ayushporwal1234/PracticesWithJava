@@ -1,0 +1,20 @@
+package collectionFrameWork;
+import java.util.*;
+
+public class PrioQueue {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		PriorityQueue<Integer> p = new PriorityQueue<>();
+		
+		p.add(5);
+		p.add(10);
+		p.add(9);
+		p.add(56);
+		p.offer(3);
+		
+		System.out.println(p.peek());
+	}
+
+}

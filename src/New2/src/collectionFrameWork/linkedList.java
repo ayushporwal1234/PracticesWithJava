@@ -1,0 +1,15 @@
+package collectionFrameWork;
+import java.util.*;
+
+public class linkedList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		LinkedList<Integer> li = new LinkedList<>();
+		li.add(5);
+		li.addFirst(85);
+		System.out.println(li);
+	}
+
+}
